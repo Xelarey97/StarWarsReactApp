@@ -1,8 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
 
-class NavMenu extends Component {
-    render(){
-        return <h1>Hello World!!!!</h1>;
-    }
+const NavBar = () => {
+    return(
+        <div>
+        <AppBar position="static">
+            <Toolbar>
+                React Material UI Example
+            </Toolbar>
+        </AppBar>
+        </div>
+    )
 }
-export default NavMenu;
+export default NavBar;
